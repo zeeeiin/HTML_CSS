@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .head{
+            height: 300px;
+        }
+        .box {
+            height: 500px;
+            border: 1px solid #777;
+            background-image: url('img/back.jpg');
+
+            background-size: auto;
+            background-size: 500px;
+            background-size: contain; /* 이미지가 잘리지않도록 채워준다 */
+            background-size: cover; /* 빈 공간 없이 꽉 채움 */
+            /* 이렇게 연달아 쓰면 맨 마지막 속성이 적용된다. */
+            
+            background-attachment: scroll; /* 뒷 배경이 스크롤을 따라 움직인다. */
+            background-attachment: fixed; /* 뒷 배경이 고정. */
+            
+        }
+        .foot{
+            height: 300px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="head">
+        header
+    </div>
+    
+    <div class="box">
+        body
+    </div>
+
+    <div class="foot">
+        footer
+    </div>
+
+</body>
+</html>

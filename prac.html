@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    @charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    padding: 200px 200px;
+}
+ul > li {
+    font-size: 30px;
+    line-height: 50px;
+}
+ul > li > a {
+    display: inline-block;
+    position: relative;
+}
+ul > li > a:after {
+    content:"";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: aqua;
+    transition: all .5s;
+}
+ul > li > a:before {
+    content:"";
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: aqua;
+    transition: all .5s;
+}
+ul > li > a:hover:after {
+    width: 50%
+}
+ul > li > a:hover:before {
+    width: 50%
+}
+</style>
+<body>
+    <body>
+        <ul>
+            <li><a href="#">hover1</a></li>
+            <li><a href="#">hover2</a></li>
+            <li><a href="#">hover3</a></li>
+        </ul>
+    </body>
+     
+</body>
+</html>

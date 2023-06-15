@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{padding: 0; margin: 0;}
+    ul, li{list-style: none;}
+
+    .pop {
+        background-attachment: scroll;
+    }
+
+    .menu {
+        text-align: center;
+        background-color: black;
+    }
+    .menu > li {
+        display: inline-block;       
+    }
+    .menu > li > a {
+        display: block;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        text-decoration-line: none;
+        color: white;
+        position: relative;
+    }
+
+    .underline {
+        display: inline-block;
+        width: 50px;
+        height: 10px;
+        bottom: 5px;
+        background-color: white;
+        position: absolute;
+    }
+
+    .menu > li > a:hover{
+        width: 50px;
+        height: 5px;       
+        background-color: white;
+        position: bottom;
+    }
+
+    /* .menu > li > a:after {
+        content: '';        
+        background-color: white;
+        position: absolute;
+        width: 0px;
+        height: 3px;
+        top: 40px;
+        left: 50%;
+        transition: all .35s;
+    }
+
+    .menu > li > a:before {
+        content: '';        
+        background-color: white;
+        position: absolute;
+        width: 0px;
+        height: 3px;
+        top: 40px;
+        right: 50%;
+        transition: all .35s;
+    }
+
+    .menu > li > a:hover:after{
+        width: 50%;
+    }
+    .menu > li > a:hover:before{
+        width: 50%;
+    } */
+    
+
+
+    .box1 {
+        width: 1061px;
+        height: 80px;
+        border: 1px solid none;  
+        box-sizing: border-box;
+        vertical-align: bottom;
+        
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 50px;
+        padding-bottom: 0px;
+      
+        margin-left: auto;
+        margin-right: auto;     
+    }
+
+
+    .box {
+        width: 1000px;
+        height: 150px;
+        border: 1px solid #777;
+        padding: 30px;
+        /* margin: 20px; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box > txt { display: inline-block;}
+
+</style>
+
+<body>
+    
+    <nav class="m">
+        <ul class="menu">
+            <li><a href="#">메뉴</a></li>
+            <li class="underline absolute"></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </nav>
+
+    <p class="pop"><img src="img/pc_crop.jpg"></p>
+
+
+    <!-- <h3 class="title">오늘의 발견</h3> -->
+
+    <div class="box1">
+        <ul class="title">
+            <li><h3>오늘의 발견</h3></li>
+        </ul>
+    </div>
+
+
+
+    <div class="box">
+        <ul class="txt">
+            <li>본문내용...</li>
+            <li>본문내용...</li>
+            <li>본문내용...</li>
+            <li>본문내용...</li>
+            <li>본문내용...</li>
+            <li>본문내용...</li>
+            <li>본문내용...</li>
+        </ul>
+    
+    </div>
+
+
+</body>
+</html>
