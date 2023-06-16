@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{padding: 0; margin: 0;}
+        ul, li {list-style: none;} /* 공통적으로 들어가는게 태그선택자에 들어가는게 맞다 */
+        img{max-width: 100%; height: auto;}
+
+
+        .gnb-box {
+            text-align: center;
+            background-color: black;
+        }
+        .gnb > li {
+            display: inline-block;
+            /* height: 64px; */
+        }
+        .gnb > li > a { /* 상세 디자인이 들어가야한다. */
+            display: block; /* 너비, 높이 지정이 가능해진다. */
+            color: white;
+            text-decoration: none;
+            /* height: 50px;
+            line-height: 50px; */
+            padding: 20px 10px;
+
+            height: 60px;
+            box-sizing: border-box;
+        }
+
+        .gnb > li > a:hover {
+            border-bottom: 3px solid white;
+        }
+
+        section {margin-top: 80px;}
+
+        .box {
+            width: 1080px; 
+            margin: 0 auto; /* 가운데로 통째로 보내기 */
+        }
+        .box > .a1 {
+            border: 1px solid #777;
+            padding: 30px;
+        }
+
+    </style>
+<body>    
+
+    <header>
+        <nav class="gnb-box">
+            <ul class="gnb">
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <img src="img/pc_crop.jpg">
+    </article>
+
+    <section>
+
+        <div class="box">
+            <h3>오늘의 발견</h3>
+            <div class="a1">
+                <p>본문내용</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+</body>
+</html>

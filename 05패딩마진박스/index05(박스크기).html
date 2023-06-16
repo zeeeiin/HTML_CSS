@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            border: 1px solid #777;
+            /* width: 300px; */
+            
+            /* 최대 너비가 500px. 그 아래에서는 사이즈가 가변된다. */
+             max-width: 300px; /* 300px 이상으로 더 커지지 않는다. */
+
+            /* 최소너비가 500px이고 그 이상에서 가변된다. */
+            min-width: 500px; 
+
+
+            /* max-height는 최대 높이가 500, 그 이하에서 가변된다. */
+            max-height: 300px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <p> 
+        max-width 는 최대 너비<br>
+        min-width 는 최소 너비<br>
+    </p>
+</body>
+</html>

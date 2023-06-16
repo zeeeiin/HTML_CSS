@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0;}
+        .box {overflow: hidden; width: 800px; border: 1px solid #777; margin: 0 auto;}
+        /* 자식 박스의 너비는 50% */
+        .box .content {float: left; width: 50%; box-sizing: border-box;} 
+
+        .content .price,
+        .content .btn-area {
+            overflow: hidden;
+        }
+
+        .control {border: 1px solid #777; margin-top: 70px;}
+        .control .left {float: left;}
+        .control .right {float: right;}
+        .control .btn-area button {width: 50%;}
+        /* 선택자를 잘 줘야 반복을 줄일 수 있다. */
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <img class="content" src="#" alt="사진">
+        <div class="content" style="border: 1px solid #777;"><!-- 글 영역 -->
+            <p>제목 : 패딩바텀 50px</p>
+            <p>내용 : ~~~</p>
+
+
+            <div class="control">
+                <div class="price">
+                    <div class="left">가격</div>
+                    <div class="right">10000원</div>
+                </div>
+                <div class="btn-area">
+                    <button class="left">장바구니</button>
+                    <button class="right">결제하기</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
