@@ -1,0 +1,40 @@
+/* 디자인 시작전에 공통적으로 선언 */
+/* 폰트부터 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: large;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul, li, ol, dd, dl {
+    list-style: none;
+}
+
+input, textarea, select, button{
+    /* 브라우저별로 기본디자인을 제거해서 동일한 디자인으로 보여질 수 있도록 서언 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+    border: none;
+}
+
+/* border-radius 기존 것을 다 덮어버리는 작업 */
+.form-control {border-radius: none;}
+
+.form-control:focus {/* 포커스가 들어가면 */
+    border-color: #222;/* border 컬러를 블랙으로 */
+    box-shadow: none; /* 그림자 제거 */
+}
+
+.btn {border-radius: 0;}

@@ -1,0 +1,54 @@
+
+.mainBox {
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.prod-left{float: left;} /* float: left; display: inline-block; */
+.prod-right{float: right; }/* float: right; display: inline-block;*/
+
+.line {background-color: rgb(202, 202, 202); height: 1px; border: 0;}
+
+.deli-info {
+    color: rgb(142, 143, 143);
+    font-size: small;
+    padding-bottom: 100px;
+}
+
+
+.price {
+    font-size: x-large;
+    font-weight: 900;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.totalBox {overflow: hidden;}
+.totalBox .total {font-size: medium;  font-weight: 600; float: left;}
+.totalBox .total-won {font-size: x-large; float: right;}
+
+.btn {overflow: hidden;}
+
+.btn .left{
+    float: left;
+    width: 50%;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.btn .right{
+    float: right;
+    width: 50%;
+    height: 50px;
+    background-color: rgb(61, 146, 216);
+    font-weight: 500;
+    font-size: medium;
+    color: white;
+}

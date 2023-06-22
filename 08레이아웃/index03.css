@@ -1,0 +1,169 @@
+header {border-top: 3px solid #00d344;}
+header .wrap {border-bottom: 1px solid #ddd;}
+header .wrap .top {width:  1008px; margin: 0 auto; overflow: hidden;}
+header .wrap .top .left {float: left; padding: 10px 8px 10px 0; font-size: 12px; color: #777;}
+header .wrap .top .right {float: right;}
+
+
+.top-right ul li {display: inline; border-left: 1px solid#ddd;}/* size 지정할 수 없게 inline */
+.top-right ul li a {display:inline-block; padding: 10px 8px; font-size: 12px; color: #777; text-decoration: none; }/* 너비를 주고싶어서 블럭으로 바꿈 */
+/* width: 20px; 주면 여백이 너무 생겨서 안 주는 것. */
+
+
+header .wrap .mid {width: 1008px; margin: 0 auto; overflow: hidden;}
+.wrap .mid .left {float: left;}
+.wrap .mid .right {float: right; margin-top: 10px;}
+.wrap .mid fieldset {
+    width: 330px;
+    height: 40px;
+    margin: 36px 0 0 11px;
+    background-image: url('img_melon/melon_search.png');
+    border: none;
+    overflow: hidden;    
+}
+.wrap .mid fieldset > input {
+    float: left;
+    width: 260px;
+    height: 25px;
+    margin: 7px 0 0 18px;
+    border: none;
+}
+.wrap .mid fieldset > button{
+    float: right;
+    height: 40px;
+    width: 45px;
+    background-image: url('img_melon/melon_btn.png');
+    background-color: white;
+    border: none;
+}
+
+.wrap .bot {overflow: hidden; width: 1008px; margin: 0 auto;}
+.wrap .bot .main-gnb {float: left;}
+.wrap .bot .sub-gnb {float: right;}
+
+.main-gnb li,
+.sub-gnb li {display: inline-block;}
+
+.main-gnb li a,
+.sub-gnb li a {display: block; color:#000; text-decoration: none; padding: 10px 5px;}
+
+
+
+/*. main{margin: 0 auto; width: 1008px;}
+.main_box {overflow: hidden; height: 100px;}
+.main_logo {float: left; display: inline-block;}
+
+.main_search{
+    width: 80px;
+    height: 10px;
+}
+
+.search {
+    /* float: left;  */ 
+    /* display: inline-block;  */    
+
+/*     background-image: url(img_melon/melon_search.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    height: 100px;
+    z-index: 10px;
+
+    background-image: url(img_melon/melon_btn.png);
+    background-size: 3%;
+}
+
+.main_right {
+    display: inline-block;
+    padding-top: 10px;
+    float: right;
+    /* background-image: url(img_melon/right_logo.jpg);
+} */
+ 
+
+/* .main_menu{margin-bottom: 35px;}
+.menu {
+    margin: 0 auto;
+    padding: 20px 20px 20px 0;
+    border: 1px solid#222; }
+.menu_right {display: inline-block; float: right; padding: 0;}
+
+.menu > li {    
+    display: inline-block;
+    padding-right: 15px;
+    font-weight: bold;
+    text-decoration: none;    
+}                            
+ */
+
+
+
+section .wrap{width: 1008px; margin: 0 auto;} /* 전체영역 */
+
+section .content {overflow: hidden;}
+section .content .list-wrap {width: 480px; float: left;} 
+section .content .slide-wrap{width: 236px; float: left;}
+section .content .user-wrap{width: 280px; float: left;}
+
+
+
+/* 이미지의 가수명 영역 */
+.list-wrap ul {overflow: hidden;}
+.list-wrap ul li {float: left; width: 33.3333%; position: relative;} /* 너비가 부모영역에 대해 33.3333따라갈 것 */
+.list-wrap ul li a {position: relative;}
+.list-wrap ul li a .singer {
+    position: absolute;
+    left: 0;
+    bottom: 4;
+    width: 100%;    
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    font-size: 11px;
+    height: 22px;    
+    line-height: 22px;
+    opacity: 0.9;
+}
+
+.list-wrap ul li .hover-cont { /* 원본태그 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 155px; /* 100% - 부모영역 기준으로 꽉 채우려고 이렇게 하는 것 */
+    height: 155px;
+    
+    background-color: black;
+    opacity: 0; /* hover가 닿으면 1로 변경 */
+    z-index: 10; /* 가장 위쪽 */
+
+    transition: opacity .5s ease-in-out; /* 바꿀 속성을 opacity 적어주면됨 */
+}
+
+/* hover */
+.list-wrap ul li:hover > .hover-cont {
+    opacity: 1;
+}
+
+.list-wrap ul li .hover-cont a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+  
+    display: inline-block;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+.slide-wrap{margin-left: 4px;}
+
+.user-wrap {margin-left: 8px; height: 118px;}
+.user-wrap > .login-wrap {
+    border: 1px solid #ddd;
+    height: 118px;
+}
+.user-wrap > .promotion-wrap {
+    margin-top: 8px;
+}

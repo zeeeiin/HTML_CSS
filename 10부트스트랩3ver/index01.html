@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩css -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">   
+
+    <!-- 제이쿼리 jquery --> 
+    <script src="js/jquery.js"></script>
+
+    <!-- 부트스트랩js -->
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+    <!-- ctrl + k + f -->
+
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+    </div>
+    
+    <hr/>
+
+    <style>
+        .back{
+            border: 1px solid #777;
+            background-color: cornflowerblue;
+        }
+
+    </style>
+
+
+    <!-- 그리드 시스템을 써주고 싶다면 컨테이너나 컨테이너 플루이드 안에 넣어야한다. -->
+    <!-- container는 양옆, 여백, container-fulid 전체영역 -->
+    <h3>그리드시스템</h3>
+    <div>
+        <div class="row"><!-- 반드시 row 안에 있어야한다. overflow hidden 에 넣기 위한 영역 --> 
+            <!-- float으로 쌓을 때 무너지지않게 하기 위함 -->
+            <div class="col-sm-3"> <!-- col - 사이즈 - 화면에서의 전체 크기 -->
+                <!-- 전체영역이 12라고 했으니 4등분 할거니까 사이즈는 3 -->
+                <div class="col-sm-3 back">박스1</div>
+                <div class="col-sm-3 back">박스1</div>
+                <div class="col-sm-3 back">박스1</div>
+                <div class="col-sm-3 back">박스1</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- md 이상에서 4등분, sm 이상에서 3등분 -->
+    <div class="container-fulid"> <!-- 전체영역에 대해서 -->
+        <div class="row">
+            <div class="col-lg-3 col-sm-4 back">박스</div><!-- sm 이상에선 3등분이니까 4 -->
+            <div class="col-lg-3 col-sm-4 back">박스</div>
+            <div class="col-lg-3 col-sm-4 back">박스</div>
+            <div class="col-lg-3 col-sm-4 back">박스</div>
+            <div class="col-lg-3 col-sm-4 back">박스</div>
+            <div class="col-lg-3 col-sm-4 back">박스</div>
+            <div class="col-lg-3 col-sm-4 back">박스</div>
+        </div>
+    </div>
+
+
+
+    <!-- 휴대폰(xs - 1), 브라우저 사이즈(sm - 4)를 고려한 반응형 -->
+
+
+    <div draggable="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3">박스</div> <!-- "col-xs-12" 핸드폰사이즈에서 전체영역을 가리킨다 -->
+            <div class="col-xs-12 col-sm-3">박스</div> 
+            <div class="col-xs-12 col-sm-3">박스</div> 
+            <div class="col-xs-12 col-sm-3">박스</div> 
+        </div>
+    </div>
+
+
+
+</body>
+</html>
