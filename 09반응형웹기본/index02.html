@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 공통적으로 들어가는 디자인은 미디어쿼리로 선언 */
+        /* box는 부모영역으로 사용 */
+        /* 반응형의 기본은 전부 %처리 */
+        .box{overflow: hidden; width: 100%;} /* 전체영역 % 로 줌 */
+        /* .box div {float: left; width: 16.6666%;} */
+
+        /* 1300px 이상에서 동작 */
+        @media (min-width: 1300px){
+            .col {float: left; width: 16.6666%;}
+        }
+
+        /* 768이상~ 1299이하 중간 사이즈 */
+        @media (max-width: 1299px) and (min-width: 768px) {
+            .col {float: left; width: 25%;}
+        }
+
+        /* 767이하 휴대폰사이즈 */
+        @media (max-width: 767px ){
+            .col{float: left; width: 50%;}
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+
+    <div class="box"> <!-- float으로 넣으려면...16.666... -->
+        <div class="col">박스</div>
+        <div class="col">박스</div>
+        <div class="col">박스</div>
+        <div class="col">박스</div>
+        <div class="col">박스</div>
+        <div class="col">박스</div>
+    </div>
+
+
+</body>
+</html>

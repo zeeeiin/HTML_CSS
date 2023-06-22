@@ -1,0 +1,60 @@
+*{padding: 0; margin: 0;}
+ul, li {list-style: none; padding: 0;}
+
+#main_head {    
+    position: fixed;
+    left: 0;
+    top: 0px;    
+    background-color: white;    
+    text-align: center;
+    width: 100%;       
+}
+
+.head {margin-top: 30px; background-color: white;}
+.menu {margin: 0 auto; background-color: white; text-align: center;}
+
+.mn > li {            
+    box-sizing: border-box;       
+    display: inline-block;     
+}
+.mn> li > a {
+    display: block;  
+    color: gray;    
+    text-decoration: none; 
+    margin-top: 20px;  
+    height: 40px;
+    line-height: 30px;   
+    padding: 20px;         
+}
+
+#log {position: fixed; top: 20px; right: 100px; z-index: 10; font-size: small;} 
+#reg {position: fixed; top: 20px; right: 20px; z-index: 10; font-size: small;} 
+
+.content {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+/* .asdie{background-image: url(images/bg.jpg); background-size: 200%; color: white;} */
+
+.img{max-width: 100%;  height: 550px; background-image: url(images/bg.jpg); 
+     background-size: auto;  color: white; } /* position: relative; */
+
+.mc1 {font-size: xx-large; text-align: center; position: absolute; top: 34%; left: 43%;}
+.mc2 {font-size: larger; text-align: center; position: absolute; top: 41%; left: 47%;}
+
+.mid{text-align: center;  padding: 10px;}
+.midline { border: 2px dashed rgb(221, 221, 221);}
+
+
+.bot{margin: 0 auto; color: rgb(194, 194, 194); margin: 0 auto; display: block;  text-align: center;}
+
+#ft{margin-top: 50px; text-align: center; margin: 0 auto;}
+.b_box1 {display: inline-block; padding: 20px; margin: 30px; text-align: center;} /* float: left; */
+.b_box2 {display: inline-block; padding: 20px; margin: 30px; text-align: center;}
+.b_box3 {display: inline-block; padding: 20px; margin: 30px; text-align: center;}
+
+
+.ft1 {float: left; padding: 5px; left: 10px; z-index: 10; font-size: small;}
+.ft2 {float: right; padding: 5px; right: 10px; z-index: 10; font-size: small}

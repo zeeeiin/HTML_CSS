@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+
+
+        .box {
+            width: 500px;
+            height: 350px;
+            padding: 20px;            
+            margin: 0 auto;
+            border: 1px solid #777;
+            /* overflow: hidden; */
+        }
+        .imgbox {
+            
+        }
+        .mid {
+            width: 500px;
+            height: 200px;            
+            float: right;
+        }
+
+        .txt {
+            width: 500px;
+            height: 150px;
+            border: 1px solid#777;
+            overflow: auto;
+            padding: 10px;
+        }
+        .bot {
+            width: 500px;
+            height: 100px;
+            padding: 5px;
+            
+        }
+        .txt-bot {            
+            width: 50;
+            height: 10;
+            float: left;
+           
+        }
+        .btn {
+            float: right;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">
+
+        <div class="imgbox">
+            <img src="img/bgimg.png" alt="사진">
+        </div>
+
+        <div class="mid">
+
+            <div class="txt">
+                hint : 이미지 영역에 position:absolute 사용.
+            </div>
+
+            <div class="bot">                 
+                <input type="text" class="txt-bot">
+                <input type="text" class="txt-bot">
+                <button class="btn">등록하기</button>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+</html>
